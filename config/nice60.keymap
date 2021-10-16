@@ -17,6 +17,7 @@
 		ht: homerow_tap{
 			compatible = "zmk,behavior-hold-tap";
 			label = "HOMEROW_TAP";
+			#binding-cells = <2>;
 			tapping-term-ms = <150>;
 			quick_tap_ms = <0>;
 			flavor = "tap-preferred";
@@ -65,6 +66,23 @@
 	&bt BT_SEL 1   &kp LEFT  &kp DOWN  &kp RIGHT &rgb_ug RGB_HUD &rgb_ug RGB_SAD &rgb_ug RGB_BRD &rgb_ug RGB_SPD &trans   &trans   &trans   &trans        &rgb_ug RGB_EFF
 	&bt BT_SEL 2    &trans    &trans    &trans   &trans          &trans          &trans          &trans          &trans   &trans   &trans                          &trans
 	&bt BT_SEL 3  &trans   &trans                            &rgb_ug RGB_TOG                                      &kp PSCRN      &trans      &trans               &kp DEL
+			>;
+		};
+
+		mac_layer {
+// ------------------------------------------------------------------------------------------------
+// |        |     |     |     |     |     |     |     |     |     |      |     |     |            |
+// |         |   |     |   |       |       |       |       |   |     |    |     |     |           |
+// |          |    |      |    |       |       |       |       |   |     |   |     |              |
+// |             |     |      |      |     |     |     |     |     |     |     |                  |
+// |         |      |      |                                    |         |       |       |       |
+// ------------------------------------------------------------------------------------------------
+			bindings = <
+	&trans &trans &trans &trans $trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+	&trans &trans    &trans    &trans  &trans           &trans          &trans          &trans           &trans   &trans   &trans   &trans  &trans          &trans 
+	&trans &trans    &trans    &trans    &trans          &trans          &trans          &trans          &trans   &trans   &trans   &trans        &trans         
+	&trans &trans    &trans    &trans   &trans          &trans          &trans          &trans          &trans   &trans   &trans                          &trans
+	&trans &trans   &trans                            &trans															&trans         &trans      &trans               &trans 
 			>;
 		};
 	};
