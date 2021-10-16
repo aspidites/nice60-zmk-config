@@ -75,14 +75,14 @@
 // |         |   |     |   |       |       |       |       |   |     |    |     |     |           |
 // |          |    |      |    |       |       |       |       |   |     |   |     |              |
 // |             |     |      |      |     |     |     |     |     |     |     |                  |
-// |         |      |      |                                    |         |       |       |       |
+// |         | OPT  | CMD  |                                    | CMD     | OPT   |       |       |
 // ------------------------------------------------------------------------------------------------
 		bindings = <
-		&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-		&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-		&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-		&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-		&trans &trans $trans $trans $trans $trans $trans $trans      
+	&trans        &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans    &trans     &trans  
+	&trans   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans    &trans    &trans  
+	&trans    &trans &trans &trans &trans &trans &trans     &trans     &trans   &trans      &trans   &trans            &trans 
+	&trans      &trans &trans &trans &trans &trans &trans &trans &trans    &trans  &trans             &trans   
+	&trans    &kp LALT &kp LGUI             &trans                        &kp RGUI  &kp RALT  &trans  &trans   
 		>;
 
 		};
