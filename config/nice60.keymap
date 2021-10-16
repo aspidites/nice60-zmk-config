@@ -14,7 +14,7 @@
 
 / {
 	behaviors {
-		hm: homerow_tap{
+		ht: homerow_tap{
 			compatible = "zmk,behavior-hold-tap";
 			label = "HOMEROW_TAP";
 			tapping-term-ms = <150>;
