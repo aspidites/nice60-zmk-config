@@ -21,7 +21,7 @@
 		combo_mac {
 			timeout-ms = <50>;
 			key-positions = <0 55>;
-			bindings = <&tog MAC>;
+			bindings = <&kp A>;
 		};
 	};
 
